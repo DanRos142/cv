@@ -9,12 +9,14 @@ export interface Resume {
     education: Education[];
     info: Info[];
     skills: string[];
+    languages: Language[];
 }
 
 export interface Link {
     name: string;
     url: string;
     icon: IconName;
+    iconStyle: string;
 }
 
 export interface Expirience {
@@ -43,6 +45,10 @@ export interface Info {
     icon: IconName;
 }
 
+export interface Language {
+    name: string;
+    level: string;
+}
 
 export const source: Resume = {
     name: 'Danylo Rosiichuk',
@@ -52,12 +58,14 @@ export const source: Resume = {
         {
             name: "LinkedIn",
             url: "https://www.linkedin.com/in/danylo-rosiichuk-947005302/",
-            icon: 'linkedin'
+            icon: 'linkedin',
+            iconStyle: 'text-sky-500'
         },
         {
             name: "Github",
             url: "https://github.com/DanRos142",
-            icon: 'github'
+            icon: 'github',
+            iconStyle: 'text-slate-500'
         }
     ],
     education: [
@@ -84,6 +92,11 @@ export const source: Resume = {
             value: '+48 500329785',
             name: 'Phone number',
             icon: 'mobile-screen'
+        },
+        {
+            value: 'Warsaw, Poland',
+            name: 'Localtion',
+            icon: 'location'
         }
     ],
     expirience: [
@@ -150,5 +163,19 @@ export const source: Resume = {
             ]
         }
     ],
-    skills: ['Java', 'Kotlin', 'Spring', 'Vert.x', 'Redis', 'Hazelcast', 'RabbitMQ', 'Kafka', 'AWS', 'Typescript', 'Angular 2+', 'D3.js', 'CI/CD', 'Terraform', 'OOP/OOD', 'PostgreSQL', 'Oracle', 'SQL Server', 'Apache Spark', 'Hibernate', 'REST API', 'Docker', 'Openshift', 'Kubernetes', 'Gradle', 'Maven', 'Git', 'ELK', 'Grafana']
+    skills: ['Java', 'Kotlin', 'Spring', 'Vert.x', 'Redis', 'Hazelcast', 'RabbitMQ', 'Kafka', 'AWS', 'Typescript', 'Angular 2+', 'D3.js', 'CI/CD', 'Terraform', 'OOP/OOD', 'PostgreSQL', 'Oracle', 'SQL Server', 'Apache Spark', 'Hibernate', 'REST API', 'Docker', 'Openshift', 'Kubernetes', 'Gradle', 'Maven', 'Git', 'ELK', 'Grafana'],
+    languages: [
+        {
+            name: 'English',
+            level: 'Full professional proficiency'
+        },
+        {
+            name: 'Ukrainian',
+            level: 'Native or bilingual proficiency'
+        },
+        {
+            name: 'Polish',
+            level: 'Beginner'
+        }
+    ]
 }

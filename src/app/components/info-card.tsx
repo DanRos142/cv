@@ -8,7 +8,7 @@ export default function InfoCard() {
     return (
         <Card>
             <CardHeader>
-                <DottedHeader title="Contact Information" />
+                <DottedHeader title="Information" />
             </CardHeader>
             <CardContent className="space-y-4">
                 {source.info.map(info => <InfoItem key={info.value} value={info.value} name={info.name} icon={info.icon} />)}

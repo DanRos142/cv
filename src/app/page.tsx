@@ -2,6 +2,7 @@ import AboutCard from "./components/about-card";
 import EducationCard from "./components/education-card";
 import ExpirienceCard from "./components/expirience-card";
 import InfoCard from "./components/info-card";
+import LanguageCard from "./components/language-card";
 import ProfileCard from "./components/profile-card";
 import SkillsCard from "./components/skills-card";
 
@@ -14,6 +15,7 @@ export default function Home() {
           <ProfileCard />
           <InfoCard />
           <SkillsCard />
+          <LanguageCard />
           <EducationCard />
         </div>
         <div className="mt-4 space-y-4 sm:mt-0 lg:col-span-2">
